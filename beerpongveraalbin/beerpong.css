@@ -1,0 +1,212 @@
+body {
+    background-color: skyblue;
+    background-image: url(img/beerbackgroundcolor.png);
+    background-repeat: repeat-y;
+    position: relative;
+}
+
+.footer{
+    bottom: -300px;
+    position: absolute;
+}
+
+h1 {
+    font-family: Porkys;
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+h2{
+    font-family: Wood;
+    font-size: 200px;
+    text-align: center;
+    margin: 0px;
+}
+
+h3{
+    font-family: Cartoonblock;
+    font-size: 50px;
+    color: #F7F975;
+    text-align: center;
+    margin: 0px;
+}
+
+h4{
+    font-family: Times New Roman;
+    font-size: 20px;
+    text-align: start;
+    margin: 9px;
+    padding-left: 8.5%;
+}
+
+h5 {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 10px 30px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+h6{
+    font-family: Times New Roman;
+    color: red;
+    text-decoration: underline;
+    font-size: 15px;
+    text-align: center;
+    margin: 9px;
+}
+
+p {
+    text-align: center;
+    font-family: BoldFont;
+    font-size: 60px;
+    margin-top: 80px;
+    margin-bottom: 0;
+}
+
+li {
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    text-align: left;
+    
+}
+
+.registeredTeams{
+    background-color: rgba(220, 240, 254, 0.81);
+    border-radius: 30px;
+    padding: 10px 35px;
+    margin: 0px 20px;
+    font-weight: bold;
+    position: relative;
+}
+
+form{
+    padding-top: 10px;
+    margin: 0px 20px;
+    text-align: center;
+    background-color: rgba(220, 240, 254, 0.81);
+    border-radius: 30px;
+}
+
+input[type=lagnamn] {
+    width: 760px;
+    height: 90px;
+    box-sizing: border-box;
+    border: 5px solid skyblue;
+    border-radius: 8px;
+    font-size: 36px;
+    background-color: white;
+    padding: 12px 20px 12px 10px;
+}
+
+input[type=medlem] {
+    width: 760px;
+    height: 90px;
+    box-sizing: border-box;
+    border: 5px solid skyblue;
+    border-radius: 8px;
+    font-size: 36px;
+    background-color: white;
+    padding: 12px 20px 12px 10px;
+}
+
+input[type=submit] {
+    width: 360px;
+    height: 70px;
+    margin: 30px;
+    box-sizing: border-box;
+    border: 5px solid skyblue;
+    border-radius: 8px;
+    font-size: 36px;
+    background-color: #DFFEDC;
+    padding: 12px 20px 12px 40px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    width: 500px;
+    height: 100px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 56px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    width: 500px;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    font-size: 40px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content p {
+    margin: 10px;
+    color: black;
+    padding: 12px 16px;
+    border: 2px solid grey;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content p:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+#regged{
+   margin-top: 200px;
+}
+
+canvas {
+  width: 100%;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+}
+
+@font-face {
+  font-family: Porkys;
+  src: url("fonts/PORKYS.TTF");
+  }
+
+@font-face {
+  font-family: Cartoonblock;
+  src: url("fonts/cartoonblock.TTF");
+  }
+
+@font-face {
+  font-family: Wood;
+  src: url("fonts/WOOD.TTF");
+  }
+
+@font-face {
+  font-family: BoldFont;
+  src: url("fonts/theboldfont.TTF");
+  }
+
+@font-face {
+    font-family: 'LuckiestGuy'; 
+    src: url('fonts/LuckiestGuy.ttf'); /*URL to font*/
+}

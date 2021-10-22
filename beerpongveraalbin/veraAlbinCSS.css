@@ -1,0 +1,460 @@
+#redo {
+    text-align: center;
+    font-size: 80px;
+    margin-top: 25%;
+    margin-bottom: -30%;
+}
+#countdown{
+    font-size: 40px
+}
+
+
+/* Slideshow container */
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+#minnen {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+.speech-bubble {
+    position: relative;
+    background: #ffff80;
+    border-radius: .4em;
+    font-size: 50px;
+    text-align: center;
+    display: none;
+    position: relative;
+    top: 450px;
+    margin-left: 240px;
+    margin-right: 240px;
+}
+
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 55px solid transparent;
+    border-top-color: #ffff80;
+    border-bottom: 0;
+    border-right: 0;
+    margin-left: -27.5px;
+    margin-bottom: -55px;
+}
+
+.speech-bubble1 {
+    font-size: 50px;
+    text-align: center;
+    display: none;
+    position: relative;
+    top: 450px;
+    margin-left: 240px;
+    margin-right: 240px;
+    position: relative;
+    background: #00ff80;
+    border-radius: .4em;
+}
+
+.speech-bubble1:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 55px solid transparent;
+    border-top-color: #00ff80;
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -27.5px;
+    margin-bottom: -55px;
+}
+
+#knapp {
+    text-align: center;
+}
+
+
+
+
+body {
+    background: skyblue;
+}
+
+#ballong {
+    position: fixed;
+    z-index: 3;
+    top: 2400px;
+    left: -105px;
+    -webkit-animation-name: example;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: ballong;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes ballong {
+    from {
+        top: 1800px;
+    }
+    to {
+        top: -230px;
+    }
+}
+
+#ballong2 {
+    position: fixed;
+    z-index: 3;
+    top: 2400px;
+    left: -105px;
+    -webkit-animation-name: example;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 10s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: ballong2;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-delay: 10s;
+}
+
+@keyframes ballong2 {
+    from {
+        top: -230px;
+        visibility: hidden;
+    }
+    to {
+        top: -2230px;
+    }
+}
+
+#hideP {
+    z-index: 2;
+    position: fixed;
+    top: 640px;
+    left: 220px;
+    background-color: skyblue;
+    width: 700px;
+    height: 950px;
+    visibility: visible;
+    animation: 0s linear 10s forwards delayDiv;
+}
+
+@keyframes delayDiv {
+    to {
+        visibility: hidden;
+    }
+}
+
+#person1 {
+    position: fixed;
+    z-index: 1;
+    margin-top: 650px;
+    left: 10%;
+    -webkit-animation-name: example;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 10s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: person1;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-delay: 49s;
+}
+
+@keyframes person1 {
+    from {
+        left: 10%;
+    }
+    to {
+        left: 200%;
+    }
+}
+
+#person2 {
+    position: fixed;
+    z-index: 1;
+    margin-top: 650px;
+    left: 35%;
+    -webkit-animation-name: example;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 10s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: person2;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-delay: 49s;
+}
+
+@keyframes person2 {
+    from {
+        left: 35%;
+    }
+    to {
+        left: 200%;
+    }
+}
+
+.button {
+    width: 750px;
+    height: 750px;
+    border-top: 50%;
+    padding-top: 50%;
+    margin-top: 50%;
+    border-radius: 50%;
+    padding: 1.25em 3em;
+    text-decoration: none;
+    border: solid black 15px;
+    box-shadow: 0 8px 166px 0 rgb(53, 79, 94);
+    font-size: 120px;
+    font-weight: bold;
+    font-family: Impact;
+
+    -webkit-transition: 0.25s ease;
+    transition: 0.25s ease;
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    content: attr(alt);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    animation: slidebg 2s linear infinite;
+
+}
+
+@keyframes slidebg {
+    to {
+        background-position: 75vw;
+    }
+}
+
+.button:hover {
+    color: #000;
+    border: solid black 150px;
+}
+
+#fusk {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position:fixed;
+    overflow-y: auto;
+
+    animation: colorchange 0.9 ease infinite;
+    /* animation-name followed by duration in seconds*/
+    /* you could also use milliseconds (ms) or something like 2.5s */
+    -webkit-animation: colorchange 0.9s ease infinite;
+    /* Chrome and Safari */
+}
+
+@keyframes colorchange {
+    0% {
+        background: #FF0066;
+    }
+    25% {
+        background: #30BFBF;
+    }
+    50% {
+        background: #66FF66;
+    }
+    75% {
+        background: #FFFF00;
+    }
+    100% {
+        background: #FF0066;
+    }
+}
+
+@-webkit-keyframes colorchange
+/* Safari and Chrome - necessary duplicate */
+
+    {
+    0% {
+        background: #FF0066;
+    }
+    25% {
+        background: #30BFBF;
+    }
+    50% {
+        background: #66FF66;
+    }
+    75% {
+        background: #FFFF00;
+    }
+    100% {
+        background: #FF0066;
+    }
+}
+
+h1 {
+
+    /* Font options */
+    font-family: Impact, Charcoal, sans-serif;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 40px;
+}
+
+.farg {
+    font-size: 35px;
+    /* Chrome, Safari, Opera */
+    -webkit-animation: rainbow 5s infinite;
+
+    /* Internet Explorer */
+    -ms-animation: rainbow 5s infinite;
+
+    /* Standar Syntax */
+    animation: rainbow 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+
+@-webkit-keyframes rainbow {
+    0% {
+        color: orange;
+    }
+    10% {
+        color: purple;
+    }
+    20% {
+        color: red;
+    }
+    30% {
+        color: CadetBlue;
+    }
+    40% {
+        color: yellow;
+    }
+    50% {
+        color: coral;
+    }
+    60% {
+        color: green;
+    }
+    70% {
+        color: cyan;
+    }
+    80% {
+        color: DeepPink;
+    }
+    90% {
+        color: DodgerBlue;
+    }
+    100% {
+        color: orange;
+    }
+}
+
+/* Internet Explorer */
+
+@-ms-keyframes rainbow {
+    0% {
+        color: orange;
+    }
+    10% {
+        color: purple;
+    }
+    20% {
+        color: red;
+    }
+    30% {
+        color: CadetBlue;
+    }
+    40% {
+        color: yellow;
+    }
+    50% {
+        color: coral;
+    }
+    60% {
+        color: green;
+    }
+    70% {
+        color: cyan;
+    }
+    80% {
+        color: DeepPink;
+    }
+    90% {
+        color: DodgerBlue;
+    }
+    100% {
+        color: orange;
+    }
+}
+
+/* Standar Syntax */
+
+@keyframes rainbow {
+    0% {
+        color: orange;
+    }
+    10% {
+        color: purple;
+    }
+    20% {
+        color: red;
+    }
+    30% {
+        color: CadetBlue;
+    }
+    40% {
+        color: yellow;
+    }
+    50% {
+        color: coral;
+    }
+    60% {
+        color: green;
+    }
+    70% {
+        color: cyan;
+    }
+    80% {
+        color: DeepPink;
+    }
+    90% {
+        color: DodgerBlue;
+    }
+    100% {
+        color: orange;
+    }
+}
+
+p {
+    font-size: 35px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#content {
+    position: static;
+    margin: 60px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    background-image: url(0b5934b623f3c6f5377f221959d77982.gif);
+
+}
+
+#click :active {
+    color: green;
+    content: 'Eddavägen 41';
+
+}
